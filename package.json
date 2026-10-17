@@ -1,0 +1,26 @@
+{
+  "name": "brudcast-sample-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The server half of a Brudcast mobile integration: signs users in, computes their identity hash, and sends in-app messages through the Brudcast API.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "axios": "1.20.0",
+    "express": "5.2.1",
+    "joi": "18.2.9"
+  }
+}
